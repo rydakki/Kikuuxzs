@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    <!-- Link para o arquivo css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <content="width=device-width, initial-scale=1.0">
+    <title>site de compras</title>
+</head>
+<body>
+    <header>
+    <!-- CABEÇALHO DO SITE-->
+     <!--DIV  QUE CONTEM O NOME DA LOJA-->
+     <div class="logo">
+        <h2>Minha loja</h2>
+        <p>produtos para você</p>
+     </div>
+     </header>
+     <!--Menu de navegação-->
+     <nav>
+        <!--
+    A tag <a> cria um link.
+    href define o endereço para onde o usuário será direcionado.
+    target="_blank" abre o link em uma nova aba.
+-->
+        <div class="menu">
+           <a href="#inicio"> Início</a>
+           <a href="#produtos"> produtos</a>
+           <a href="#sobre"> sobre</a>
+           <a href="#contato"> contato</a>
+     </div>
+     </nav>
+     <!--conteudo principal do site-->
+     
+     <main>
+        <!-- seção inicial -->
+         <section id="inicio">
+            <div class="banner">
+                <h2> Bem vindo a loja</h2>
+                <p>
+                    confira nossos produtos 
+                </p>
+            </div>
+         </section>
+         <!-- seção de produtos-->
+          <section id="produtos">
+            <h2> Nossos produtos</h2>
+            <!-- div com todos os produtos-->
+             <div class="produtos">
+                <!-- imagens do produto-->
+                 <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtu88QvRG24CzRIBPk6u7w9oSzESaN5_0Zw9CCkzwJNbtJ_jvbcPOnFB3&s=10"
+                    alt="imagem do patati">
+                    <h3> patati patata</h3>
+                    <p class ="preco">
+                        R$ 1400,00
+                    </p>
+                    <!--botão que abre o modal
+                    <button>
+                        class="botao"
+                    onclick="document.getElementByid('modal-patati').style.display"='block'
+                    >
+                    comprar
+                    </button>
+                -->
+             </div>
+
+             <!-- sobre a loja-->
+              <section id="sobre">
+                <div class="sobre">
+                    <h2>Sobre a Loja</h2>
+                    <p>
+                        somos uma loja que vende patati e patata
+                    </p>
+                </div>
+              </section>
+
+              <!--seção de contatos-->
+              <section id="contato">
+                <div class="contato">
+                    <h2>contato</h2>
+                    <p>
+                        email: patatipata@circo.com
+                    </p>
+
+                </div>
+              </section>
+              <!--SEÇÃO DE CONTATO FORMULÁRIO-->
+              <section id="contato">
+                <h2>Entre em contato</h2>
+
+                <!-- formulário de contato -->
+                <form action="#" method="post">
+                    <!--campo para o nome-->
+                    <label for="nome">Nome</label>
+                    <input 
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required>
+
+                    <!--campo para o telefone-->
+                    <label for="telefone">Telefone</label>
+                    <input 
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="Digite seu telefone (00) 00000-0000">
+
+                    <!--campo para o e-mail-->
+                    <label for="email">E-mail</label>
+                    <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+
+                    <!-- campo para escolher o assunto-->
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida</option>
+                        <option value="produto">Produto</option>
+                        <option value="comprar">Comprar</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <!--campo de mensagem-->
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        placeholder="Digite sua mensagem"
+                        required>
+                    </textarea>
+
+                    <!--Botão de enviar-->
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+                </form>
+              </section>
+            
+     </main>
+     <!--FOOTER SEMPRE FORA DA MAIN-->
+     <!--FOOTER-->
+     <footer>
+        <div class="rodape">
+            <p>
+                &desde 1905 - patati e patata 
+            </p>
+        </div>
+     </footer>
+</body>
+</html>
