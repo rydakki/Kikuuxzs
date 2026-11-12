@@ -1,0 +1,252 @@
+/*configurações gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3e2222;
+    color: #f1e4e4;
+}
+
+/*cabeçalho*/
+header {
+    background-color: #5c2a2a;
+    clolor: white;
+    padding: 25px;
+    text-align: center;
+}
+.logo h1 {
+    font-size: 5px;
+}
+/*menu de navegação*/
+nav {
+    background-color: #5c2a2a;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px ;
+}
+.menu a {
+    color : white;
+    text-decoration: none;
+    
+}
+.menu a:hover {
+    color: #f1e4e4;
+}
+/*conteúdo principal*/
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;  
+}
+/*banner*/
+.banner {
+    background-color: #5c2a2a;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+}
+.banner h2 {
+    margin-bottom: 15px;
+}
+/*seção de produtos*/
+.produtos {
+    text-align: center;
+    padding: 20px;
+}
+#produtos h2 {
+    text-align: center;
+    margin-bottom: 30px; /* opcional: dá espaço em relação aos produtos abaixo */
+}
+produtos h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 40px;
+}
+/*div que organiza os produtos */
+.lista-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* cartão de produto */
+.produto {
+    background-color: #5c2a2a;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+/*imagem do produto */
+.produto img {
+    width: 100%;
+    border-radius: 5px;
+}
+/*nome do produto */
+.produto h3 {
+    margin: 15px 0 10px;
+    text-align: center;
+}
+/*preço do produto */
+.produto p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;    
+}
+/*botão de compra */
+.botao-comprar {
+    background-color: #f1e4e4;
+    color: #5c2a2a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*efeito hover no botão de compra */
+.botao-comprar:hover {
+    background-color: #d1bfbf;
+}
+/*seção de sobre */
+.sobre {
+    background-color: #5c2a2a;
+    margin-top: 30px;
+    padding: 40px 20px;
+    text-align: center;
+}
+.sobre h2 {
+    margin-bottom: 15px;
+}
+/*seção de contato */
+.contato {
+    background-color: #5c2a2a;
+    padding: 40px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contato h2 {
+    margin-bottom: 15px;
+}
+/*rodapé*/
+footer {
+    background-color: #5c2a2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+/*estilo do modal
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 10px;
+}
+/*imagem do modal */
+.modal-content img {
+    width: 100%;
+    border-radius: 5px;
+}   
+/*botão de fechar modal */
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+*/
+
+/*
+   ALTERAÇÕES DO FORMULÁRIO DE CONTATO
+   - ajuste da área de contato
+   - organização visual dos campos e botão
+   - correção de syntax na regra do bloco
+*/
+#contato {
+    background-color: #5c2a2a;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+#contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*
+   FORMULÁRIO DE CONTATO
+   define a largura e centralização do formulário
+*/
+#contato form {
+    max-width: 600px;
+    margin: auto;
+}
+
+/*
+   CAMPOS DO FORMULÁRIO
+   deixa os rótulos alinhados à esquerda e os inputs com aparência consistente
+*/
+#contato label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/*
+   ÁREA DE MENSAGEM
+   permite que o usuário ajuste a altura da caixa de texto
+*/
+#contato textarea {
+    resize: vertical;
+}
+
+/*
+   BOTÃO DE ENVIO
+   mantém o botão com visual similar aos demais elementos da página
+*/
+#contato button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f1e4e4;
+    color: #5c2a2a;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
